@@ -1,10 +1,10 @@
 /* ============ SUN VIETNAM ============ */
 :root {
-  --sun-600: #C2410C;
-  --sun-500: #E8590C;
-  --sun-400: #F7782B;
-  --sun-200: #FFD8A8;
-  --sun-100: #FFF0E0;
+  --sun-600: #B91C1C;
+  --sun-500: #DD2326;
+  --sun-400: #EF4444;
+  --sun-200: #FECACA;
+  --sun-100: #FEF0EF;
   --cream: #FFFAF3;
   --paper: #FFFFFF;
   --ink: #1F1A17;
@@ -108,13 +108,13 @@ svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width:
 .hero__badges li::before { content: ''; display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--leaf-2); margin-right: 8px; vertical-align: middle; }
 .hero__art { position: relative; aspect-ratio: 1 / 1; width: 100%; max-width: 520px; justify-self: end; }
 .sun { position: absolute; left: 50%; top: 44%; width: 56%; aspect-ratio: 1; transform: translate(-50%, -50%); border-radius: 50%;
-  background: radial-gradient(circle at 38% 34%, #FFE8C7 0%, var(--sun-200) 22%, var(--sun-400) 62%, var(--sun-500) 100%);
-  box-shadow: 0 0 0 18px rgba(247, 120, 43, .10), 0 0 0 44px rgba(247, 120, 43, .06), 0 30px 80px rgba(232, 89, 12, .35);
+  background: radial-gradient(circle at 38% 34%, #FFE4E1 0%, var(--sun-200) 22%, var(--sun-400) 62%, var(--sun-500) 100%);
+  box-shadow: 0 0 0 18px rgba(221, 35, 38, .10), 0 0 0 44px rgba(221, 35, 38, .06), 0 30px 80px rgba(221, 35, 38, .30);
   animation: rise 1.2s cubic-bezier(.2, .8, .2, 1) both; }
-.ray { position: absolute; left: 50%; top: 44%; border: 1.5px solid rgba(232, 89, 12, .22); border-radius: 50%; transform: translate(-50%, -50%); animation: pulse 6s ease-in-out infinite; }
+.ray { position: absolute; left: 50%; top: 44%; border: 1.5px solid rgba(221, 35, 38, .22); border-radius: 50%; transform: translate(-50%, -50%); animation: pulse 6s ease-in-out infinite; }
 .ray--1 { width: 78%; aspect-ratio: 1; }
 .ray--2 { width: 94%; aspect-ratio: 1; animation-delay: 1s; border-style: dashed; }
-.ray--3 { width: 110%; aspect-ratio: 1; animation-delay: 2s; border-color: rgba(232, 89, 12, .12); }
+.ray--3 { width: 110%; aspect-ratio: 1; animation-delay: 2s; border-color: rgba(221, 35, 38, .12); }
 .hill { position: absolute; left: -10%; right: -10%; border-radius: 50% 50% 0 0 / 100% 100% 0 0; }
 .hill--1 { bottom: 0; height: 34%; background: var(--leaf); }
 .hill--2 { bottom: 0; height: 22%; left: 20%; right: -30%; background: var(--leaf-2); }
@@ -142,13 +142,15 @@ svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width:
 .pagehead--warm { padding: 72px 0 40px; background: linear-gradient(180deg, var(--cream), var(--sun-100)); }
 
 /* categories */
-.cats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+.cats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.cat--area { padding: 28px 24px; }
+.cat__more { margin-top: 10px; font-weight: 700; font-size: 14px; color: var(--sun-600); }
 .cat { display: flex; flex-direction: column; gap: 4px; padding: 22px 20px; background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); transition: border-color .15s, transform .15s; }
 .cat:hover { border-color: var(--sun-400); transform: translateY(-2px); }
 .cat__ic { width: 44px; height: 44px; border-radius: 12px; display: grid; place-items: center; background: var(--sun-100); color: var(--sun-600); margin-bottom: 10px; }
 .cat__t { font-weight: 800; font-size: 17px; }
 .cat__d { color: var(--muted); font-size: 13.5px; }
-@media (max-width: 760px) { .cats { grid-template-columns: repeat(2, 1fr); gap: 10px; } .cat { padding: 16px; } }
+@media (max-width: 760px) { .cats { grid-template-columns: 1fr; gap: 10px; } .cat { padding: 18px; } }
 
 /* product grid */
 .grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px 20px; }
@@ -169,7 +171,7 @@ svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width:
 .tag--soldout { left: auto; right: 10px; background: #fff; color: var(--ink); }
 .ph { display: grid; place-items: center; color: var(--sun-600); }
 .ph svg { width: 34%; height: 34%; stroke-width: 1.2; opacity: .85; }
-.ph--physical_product { background: radial-gradient(circle at 70% 25%, #FFE3C4, var(--sun-100) 60%); }
+.ph--physical_product { background: radial-gradient(circle at 70% 25%, #FFDCDC, var(--sun-100) 60%); }
 .ph--service { background: radial-gradient(circle at 70% 25%, #D8F0E4, #EEF8F2 60%); color: var(--leaf); }
 .ph--menu { background: radial-gradient(circle at 70% 25%, #FFE9B8, #FFF7E2 60%); color: #B7791F; }
 .ph--booking { background: radial-gradient(circle at 70% 25%, #E4E2FA, #F3F2FD 60%); color: #5546B8; }

@@ -2,7 +2,8 @@
 import { MERCHANT } from './config.js';
 import { t, tx, getLang, setLang, applyI18n } from './i18n.js';
 import { cart } from './cart.js';
-import { formatPrice } from './products.js';
+import { formatPrice as fmt } from './products.js';
+const formatPrice = (n, c) => (Number(n) > 0 ? fmt(n, c) : t('p.quote'));
 import { ICONS, esc, toast } from './ui.js';
 
 const NAV = [

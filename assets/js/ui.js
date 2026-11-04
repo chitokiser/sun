@@ -1,5 +1,6 @@
 import { t, tx } from './i18n.js';
-import { formatPrice } from './products.js';
+import { formatPrice as fmt } from './products.js';
+const formatPrice = (n, c) => (Number(n) > 0 ? fmt(n, c) : t('p.quote'));
 import { cart } from './cart.js';
 
 export const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -16,6 +17,7 @@ export const ICONS = {
   service: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 18v-5a8 8 0 0 1 16 0v5"/><rect x="2.5" y="14" width="4" height="6" rx="1.5"/><rect x="17.5" y="14" width="4" height="6" rx="1.5"/></svg>',
   menu_type: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 9h12v5a6 6 0 0 1-12 0z"/><path d="M17 10h1.5a2.5 2.5 0 0 1 0 5H17M8 3c0 1.5 1 1.5 1 3M12 3c0 1.5 1 1.5 1 3"/></svg>',
   booking: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>',
+  fire: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21c-3.9 0-7-2.8-7-6.6 0-3.2 2.3-5.3 3.7-7.1.3 1.6 1.2 2.8 2.3 3.4C11.3 7 12.4 4.4 15 3c-.4 2.8.6 4.6 2 6.3 1.2 1.4 2 3 2 5.1 0 3.8-3.1 6.6-7 6.6z"/><path d="M12 21c-1.7 0-3-1.2-3-2.8 0-1.8 1.5-2.8 3-4.7 1.5 1.9 3 2.9 3 4.7 0 1.6-1.3 2.8-3 2.8z"/></svg>',
   check: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>',
   truck: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 6h11v10h-11zM13.5 9.5h4l3 3.5V16h-7"/><circle cx="6.5" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg>',
   chat: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 10h8M8 13h5"/></svg>',

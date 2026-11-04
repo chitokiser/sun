@@ -22,7 +22,8 @@ function visible() {
 }
 
 function renderFilter() {
-  filter.innerHTML = ['all', ...PRODUCT_TYPES].map((type) => {
+  const types = PRODUCT_TYPES.filter((ty) => !loaded || ty === state.type || products.some((p) => p.type === ty));
+  filter.innerHTML = ['all', ...(loaded ? types : [])].map((type) => {
     const n = type === 'all' ? products.length : products.filter((p) => p.type === type).length;
     return `<button class="chip${state.type === type ? ' is-on' : ''}" role="tab" aria-selected="${state.type === type}" data-type="${type}">
       ${type === 'all' ? t('cat.all') : t('type.' + type)}${loaded ? ` <span class="chip__n">${n}</span>` : ''}</button>`;
