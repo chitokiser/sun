@@ -1,0 +1,123 @@
+/** 화면 문구 (한국어 / Tiếng Việt). 문구 수정은 여기서 하세요. */
+export const DICT = {
+  ko: {
+    'topbar': 'BestClub 공식 가맹점 · Google 계정으로 가입하면 BestClub 회원이 됩니다',
+    'nav.home': '홈', 'nav.shop': '상품', 'nav.about': '브랜드 소개', 'nav.contact': '고객 문의',
+    'nav.login': '로그인', 'nav.logout': '로그아웃', 'nav.cart': '장바구니', 'nav.menu': '메뉴',
+    'hero.eyebrow': '한국의 건강 · 뷰티를 베트남에',
+    'hero.title': '매일의 건강을<br>햇살처럼 가볍게',
+    'hero.lead': '썬베트남은 검증된 한국 건강·뷰티 제품과 상담 서비스를 베트남 고객에게 전하는 BestClub 공식 가맹점입니다.',
+    'hero.cta': '상품 둘러보기', 'hero.cta2': '회원가입',
+    'hero.badge1': '정품 한국 제품', 'hero.badge2': '베트남 현지 배송', 'hero.badge3': 'BestClub 회원 연동',
+    'cat.title': '카테고리', 'cat.all': '전체',
+    'type.physical_product': '제품', 'type.service': '서비스', 'type.menu': '메뉴 · 식음료', 'type.booking': '예약',
+    'type.physical_product.d': '건강식품 · 화장품 · 생활용품', 'type.service.d': '상담 · 정기구독',
+    'type.menu.d': '차 · 건강음료', 'type.booking.d': '매장 체험 예약',
+    'best.title': '추천 상품', 'best.more': '전체 상품 보기',
+    'why.title': '썬베트남을 선택하는 이유',
+    'why.1.t': '한국 정품만', 'why.1.d': '국내 제조사와 직접 거래한 제품만 소개합니다.',
+    'why.2.t': '현지 빠른 배송', 'why.2.d': '하노이·호치민 중심으로 베트남 전역에 배송합니다.',
+    'why.3.t': '전문 상담', 'why.3.d': '한국어·베트남어로 제품 선택부터 사용법까지 안내합니다.',
+    'why.4.t': 'BestClub 혜택', 'why.4.d': '하나의 BestClub 계정으로 가맹점 혜택을 함께 누리세요.',
+    'join.title': 'Google 계정 하나로 바로 가입',
+    'join.lead': '썬베트남에서 가입하면 BestClub 통합 회원으로 등록되어 다른 BestClub 가맹점에서도 같은 계정을 사용할 수 있습니다.',
+    'join.cta': 'Google로 가입하기', 'join.done': '가입되어 있습니다',
+    'shop.title': '전체 상품', 'shop.search': '상품명 검색', 'shop.sort.default': '추천순',
+    'shop.sort.low': '낮은 가격순', 'shop.sort.high': '높은 가격순', 'shop.count': '개 상품',
+    'shop.empty': '등록된 상품이 없습니다.', 'shop.loading': '상품을 불러오는 중…', 'shop.error': '상품을 불러오지 못했습니다. 잠시 후 다시 시도해 주세요.',
+    'sample.notice': '가맹점 ID가 아직 설정되지 않아 샘플 상품을 표시하고 있습니다.', 'sample.badge': '샘플',
+    'p.add': '장바구니 담기', 'p.soldout': '품절', 'p.option': '옵션', 'p.qty': '수량', 'p.added': '장바구니에 담았습니다',
+    'cart.title': '장바구니', 'cart.empty': '장바구니가 비어 있습니다.', 'cart.total': '합계',
+    'cart.checkout': 'BestClub에서 결제하기', 'cart.inquiry': '문의로 주문하기', 'cart.remove': '삭제',
+    'cart.note': '결제와 리워드 적립은 BestClub 통합몰에서 진행됩니다.', 'cart.loginFirst': '결제하려면 먼저 로그인해 주세요.',
+    'about.eyebrow': '브랜드 소개', 'about.title': '햇살 같은 건강을 전하는 사람들',
+    'about.p1': '썬베트남은 한국에서 검증된 건강·뷰티 제품을 베트남 고객의 생활에 맞게 소개합니다. 제품을 파는 데서 그치지 않고, 고객 한 분 한 분에게 맞는 사용법과 관리 방법을 함께 안내합니다.',
+    'about.p2': 'BestClub 공식 가맹점으로서 상품·주문·회원 정보는 BestClub 통합 시스템과 연동됩니다. 썬베트남에서 가입한 회원은 하나의 계정으로 BestClub의 모든 가맹점을 이용할 수 있습니다.',
+    'about.v.title': '우리가 지키는 약속',
+    'about.v1.t': '정직한 제품', 'about.v1.d': '원산지와 성분을 투명하게 공개합니다.',
+    'about.v2.t': '고객 중심 상담', 'about.v2.d': '필요한 만큼만 권합니다.',
+    'about.v3.t': '책임 있는 사후 관리', 'about.v3.d': '구매 후에도 끝까지 함께합니다.',
+    'about.bc.title': 'BestClub 가맹점 연동',
+    'about.bc.1': '상품 정보는 BestERP에서 관리되어 실시간으로 반영됩니다.',
+    'about.bc.2': '회원 인증은 BestClub 통합 계정(Google)으로 처리됩니다.',
+    'about.bc.3': '결제·리워드는 BestClub 통합몰의 기존 시스템에서 처리됩니다.',
+    'contact.title': '고객 문의', 'contact.lead': '제품 상담, 주문, 제휴 문의를 남겨 주세요.',
+    'contact.name': '이름', 'contact.phone': '연락처', 'contact.subject': '문의 유형', 'contact.message': '문의 내용',
+    'contact.s.product': '제품 상담', 'contact.s.order': '주문 · 배송', 'contact.s.partner': '제휴 · 가맹', 'contact.s.etc': '기타',
+    'contact.send': '이메일로 문의 보내기', 'contact.ways': '연락 방법', 'contact.hours': '상담 시간',
+    'contact.noEmail': '문의 이메일이 아직 설정되지 않았습니다.',
+    'contact.phoneL': '전화', 'contact.emailL': '이메일', 'contact.addrL': '주소',
+    'footer.rights': 'All rights reserved.', 'footer.partner': 'BestClub 공식 가맹점',
+    'footer.company': '상호', 'footer.tax': '사업자번호(MST)', 'footer.rep': '대표',
+    'auth.welcome': '환영합니다', 'auth.failed': '로그인에 실패했습니다. 팝업 차단을 확인해 주세요.',
+  },
+  vi: {
+    'topbar': 'Đối tác chính thức của BestClub · Đăng nhập bằng Google để trở thành hội viên BestClub',
+    'nav.home': 'Trang chủ', 'nav.shop': 'Sản phẩm', 'nav.about': 'Giới thiệu', 'nav.contact': 'Liên hệ',
+    'nav.login': 'Đăng nhập', 'nav.logout': 'Đăng xuất', 'nav.cart': 'Giỏ hàng', 'nav.menu': 'Menu',
+    'hero.eyebrow': 'Sức khoẻ & làm đẹp Hàn Quốc tại Việt Nam',
+    'hero.title': 'Khoẻ mỗi ngày,<br>nhẹ như nắng sớm',
+    'hero.lead': 'SUN VIETNAM là đối tác chính thức của BestClub, mang đến sản phẩm sức khoẻ – làm đẹp Hàn Quốc chính hãng và dịch vụ tư vấn tận tâm cho khách hàng Việt Nam.',
+    'hero.cta': 'Xem sản phẩm', 'hero.cta2': 'Đăng ký hội viên',
+    'hero.badge1': 'Chính hãng Hàn Quốc', 'hero.badge2': 'Giao hàng toàn quốc', 'hero.badge3': 'Liên kết BestClub',
+    'cat.title': 'Danh mục', 'cat.all': 'Tất cả',
+    'type.physical_product': 'Sản phẩm', 'type.service': 'Dịch vụ', 'type.menu': 'Đồ uống', 'type.booking': 'Đặt lịch',
+    'type.physical_product.d': 'TPCN · Mỹ phẩm · Gia dụng', 'type.service.d': 'Tư vấn · Định kỳ',
+    'type.menu.d': 'Trà · Thức uống', 'type.booking.d': 'Trải nghiệm tại cửa hàng',
+    'best.title': 'Sản phẩm nổi bật', 'best.more': 'Xem tất cả',
+    'why.title': 'Vì sao chọn SUN VIETNAM',
+    'why.1.t': 'Chính hãng Hàn Quốc', 'why.1.d': 'Chỉ giới thiệu sản phẩm nhập trực tiếp từ nhà sản xuất.',
+    'why.2.t': 'Giao nhanh tại Việt Nam', 'why.2.d': 'Giao hàng toàn quốc, ưu tiên Hà Nội và TP.HCM.',
+    'why.3.t': 'Tư vấn chuyên nghiệp', 'why.3.d': 'Hỗ trợ tiếng Việt và tiếng Hàn từ chọn sản phẩm đến cách dùng.',
+    'why.4.t': 'Ưu đãi BestClub', 'why.4.d': 'Một tài khoản BestClub dùng chung cho mọi cửa hàng đối tác.',
+    'join.title': 'Đăng ký nhanh bằng tài khoản Google',
+    'join.lead': 'Đăng ký tại SUN VIETNAM, bạn trở thành hội viên BestClub và dùng cùng một tài khoản ở mọi cửa hàng đối tác.',
+    'join.cta': 'Đăng ký với Google', 'join.done': 'Bạn đã là hội viên',
+    'shop.title': 'Tất cả sản phẩm', 'shop.search': 'Tìm sản phẩm', 'shop.sort.default': 'Đề xuất',
+    'shop.sort.low': 'Giá thấp → cao', 'shop.sort.high': 'Giá cao → thấp', 'shop.count': ' sản phẩm',
+    'shop.empty': 'Chưa có sản phẩm.', 'shop.loading': 'Đang tải sản phẩm…', 'shop.error': 'Không tải được sản phẩm. Vui lòng thử lại sau.',
+    'sample.notice': 'Chưa cấu hình mã cửa hàng — đang hiển thị sản phẩm mẫu.', 'sample.badge': 'Mẫu',
+    'p.add': 'Thêm vào giỏ', 'p.soldout': 'Hết hàng', 'p.option': 'Tuỳ chọn', 'p.qty': 'Số lượng', 'p.added': 'Đã thêm vào giỏ hàng',
+    'cart.title': 'Giỏ hàng', 'cart.empty': 'Giỏ hàng trống.', 'cart.total': 'Tổng cộng',
+    'cart.checkout': 'Thanh toán tại BestClub', 'cart.inquiry': 'Đặt hàng qua liên hệ', 'cart.remove': 'Xoá',
+    'cart.note': 'Thanh toán và tích điểm được xử lý tại BestClub Mall.', 'cart.loginFirst': 'Vui lòng đăng nhập trước khi thanh toán.',
+    'about.eyebrow': 'Giới thiệu', 'about.title': 'Mang sức khoẻ ấm áp như ánh nắng',
+    'about.p1': 'SUN VIETNAM giới thiệu những sản phẩm sức khoẻ – làm đẹp đã được kiểm chứng tại Hàn Quốc, phù hợp với cuộc sống của khách hàng Việt Nam. Chúng tôi không chỉ bán hàng mà còn hướng dẫn cách dùng và chăm sóc phù hợp cho từng người.',
+    'about.p2': 'Là đối tác chính thức của BestClub, thông tin sản phẩm, đơn hàng và hội viên được liên kết với hệ thống BestClub. Hội viên đăng ký tại SUN VIETNAM có thể dùng một tài khoản cho mọi cửa hàng BestClub.',
+    'about.v.title': 'Cam kết của chúng tôi',
+    'about.v1.t': 'Sản phẩm trung thực', 'about.v1.d': 'Công khai nguồn gốc và thành phần.',
+    'about.v2.t': 'Tư vấn vì khách hàng', 'about.v2.d': 'Chỉ giới thiệu những gì bạn thật sự cần.',
+    'about.v3.t': 'Hậu mãi chu đáo', 'about.v3.d': 'Đồng hành cả sau khi mua hàng.',
+    'about.bc.title': 'Liên kết đối tác BestClub',
+    'about.bc.1': 'Thông tin sản phẩm được quản lý trên BestERP và cập nhật theo thời gian thực.',
+    'about.bc.2': 'Xác thực hội viên bằng tài khoản BestClub (Google).',
+    'about.bc.3': 'Thanh toán và điểm thưởng được xử lý tại BestClub Mall.',
+    'contact.title': 'Liên hệ', 'contact.lead': 'Để lại câu hỏi về sản phẩm, đơn hàng hoặc hợp tác.',
+    'contact.name': 'Họ tên', 'contact.phone': 'Số điện thoại', 'contact.subject': 'Loại yêu cầu', 'contact.message': 'Nội dung',
+    'contact.s.product': 'Tư vấn sản phẩm', 'contact.s.order': 'Đơn hàng · Giao hàng', 'contact.s.partner': 'Hợp tác · Đại lý', 'contact.s.etc': 'Khác',
+    'contact.send': 'Gửi qua email', 'contact.ways': 'Kênh liên hệ', 'contact.hours': 'Giờ tư vấn',
+    'contact.noEmail': 'Chưa cấu hình email liên hệ.',
+    'contact.phoneL': 'Điện thoại', 'contact.emailL': 'Email', 'contact.addrL': 'Địa chỉ',
+    'footer.rights': 'Bảo lưu mọi quyền.', 'footer.partner': 'Đối tác chính thức BestClub',
+    'footer.company': 'Tên công ty', 'footer.tax': 'MST', 'footer.rep': 'Người đại diện',
+    'auth.welcome': 'Xin chào', 'auth.failed': 'Đăng nhập thất bại. Vui lòng kiểm tra trình chặn popup.',
+  },
+};
+
+const KEY = 'sunvn_lang';
+export function getLang() {
+  try { const v = localStorage.getItem(KEY); if (v === 'ko' || v === 'vi') return v; } catch {}
+  return (navigator.language || '').toLowerCase().startsWith('ko') ? 'ko' : 'vi';
+}
+export function setLang(l) { try { localStorage.setItem(KEY, l); } catch {} }
+export const t = (key) => DICT[getLang()][key] ?? DICT.ko[key] ?? key;
+/** 다국어 객체({ko, vi}) 또는 문자열을 현재 언어로 */
+export const tx = (v) => (v && typeof v === 'object') ? (v[getLang()] ?? v.ko ?? '') : (v ?? '');
+
+/** data-i18n / data-i18n-html / data-i18n-ph 속성 일괄 적용 */
+export function applyI18n(root = document) {
+  root.querySelectorAll('[data-i18n]').forEach((el) => { el.textContent = t(el.dataset.i18n); });
+  root.querySelectorAll('[data-i18n-html]').forEach((el) => { el.innerHTML = t(el.dataset.i18nHtml); });
+  root.querySelectorAll('[data-i18n-ph]').forEach((el) => { el.placeholder = t(el.dataset.i18nPh); });
+  document.documentElement.lang = getLang();
+}
