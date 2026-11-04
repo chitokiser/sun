@@ -25,7 +25,7 @@ ES 모듈을 쓰므로 `index.html` 을 더블클릭(file://)으로 열면 동�
 
 ## 설정 — `assets/js/config.js` 한 곳만 수정
 
-- `merchantId` : **아직 비어 있음.** 비어 있으면 샘플 상품 8개가 '샘플' 배지와 함께 표시되고, 회원 멘토 자동 지정도 하지 않습니다.
+- `merchantId` : `1793776651` (sunvietnam 가맹점, 등록 완료). BestERP 관리자(`가맹점 상품 관리`)에서 with-sun.com 안전·보건 카테고리 기준 66개 상품을 VND 참고가로 등록해 두었습니다. 비워두면 샘플 상품 8개가 대신 표시됩니다.
 - `ownerEmail` : `hexdao722@gmail.com` (가맹점주 / 가입 회원의 멘토)
 - `logoUrl` : `assets/img/logo.png` — 원본 `20261104_134737.png` 의 흰 배경을 투명 처리한 것 (`logo@2x.png` 는 고해상도 화면용)
 - `contact`, `business` : 전화 · 이메일 · Zalo · 주소 · 사업자 정보. 비어 있는 항목은 화면에 나오지 않습니다. 문의 양식과 '문의로 주문하기'는 `contact.email` 이 있어야 동작합니다.

@@ -3,11 +3,11 @@
  *
  * merchantId : BestClub Firestore merchants/{merchantId} 정식 문서 ID.
  *              비워두면 사이트는 "샘플 상품"으로 동작하고, 회원 멘토 자동 지정도 하지 않습니다.
- *              ID 발급 후 여기 입력 + 베스트클럽_mcp/config/merchants.json 에 등록하세요 (README 참고).
+ *              1793776651 = sunvietnam 가맹점 (BestERP 관리자에서 상품 66건 등록 완료, with-sun.com 안전·보건 카테고리 기준 참고 가격).
  * ownerEmail : 가맹점주(CEO) Google 계정. 가입 회원의 mentorEmail 로 기록됩니다.
  */
 export const MERCHANT = {
-  merchantId: '',
+  merchantId: '1793776651',
   ownerEmail: 'hexdao722@gmail.com',
 
   brand: { ko: '썬베트남', vi: 'SUN VIETNAM', en: 'SUN VIETNAM' },
