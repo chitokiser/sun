@@ -43,9 +43,11 @@ async function logout() { const { fb } = await loadFirebase(); await fb.signOut(
 const brandName = () => tx(MERCHANT.brand);
 
 function logoHtml() {
+  const srcset = MERCHANT.logoUrl2x ? ` srcset="${esc(MERCHANT.logoUrl)} 1x, ${esc(MERCHANT.logoUrl2x)} 2x"` : '';
   return `<a class="logo" href="index.html" aria-label="${esc(brandName())}">
-    <img src="${esc(MERCHANT.logoUrl)}" alt="${esc(brandName())}" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
-    <span class="logo__text" hidden><span class="logo__sun"></span>${esc(MERCHANT.brand.vi)}</span>
+    <img class="logo__mark" src="${esc(MERCHANT.logoUrl)}"${srcset} alt="" width="40" height="39" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+    <span class="logo__sun" hidden></span>
+    <span class="logo__text">${esc(MERCHANT.brand.vi)}</span>
   </a>`;
 }
 

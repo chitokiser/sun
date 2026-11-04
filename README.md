@@ -26,7 +26,7 @@ ES 모듈을 쓰므로 `index.html` 을 더블클릭(file://)으로 열면 동�
 
 - `merchantId` : **아직 비어 있음.** 비어 있으면 샘플 상품 8개가 '샘플' 배지와 함께 표시되고, 회원 멘토 자동 지정도 하지 않습니다.
 - `ownerEmail` : `hexdao722@gmail.com` (가맹점주 / 가입 회원의 멘토)
-- `logoUrl` : `https://sunmedi.net/web/upload/free_design/head_logo_active.png` (불러오지 못하면 텍스트 로고로 대체)
+- `logoUrl` : `assets/img/logo.png` — 원본 `20261104_134737.png` 의 흰 배경을 투명 처리한 것 (`logo@2x.png` 는 고해상도 화면용)
 - `contact`, `business` : 전화 · 이메일 · Zalo · 주소 · 사업자 정보. 비어 있는 항목은 화면에 나오지 않습니다. 문의 양식과 '문의로 주문하기'는 `contact.email` 이 있어야 동작합니다.
 
 화면 문구(한국어 / 베트남어)는 `assets/js/i18n.js` 에서 수정합니다. 언어는 브라우저 언어로 자동 선택되고 헤더의 KO/VI 버튼으로 바꿀 수 있습니다.

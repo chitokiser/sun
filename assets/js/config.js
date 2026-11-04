@@ -11,7 +11,8 @@ export const MERCHANT = {
   ownerEmail: 'hexdao722@gmail.com',
 
   brand: { ko: '썬베트남', vi: 'SUN VIETNAM', en: 'SUN VIETNAM' },
-  logoUrl: 'https://sunmedi.net/web/upload/free_design/head_logo_active.png',
+  logoUrl: 'assets/img/logo.png',          // 투명 PNG (원본: assets/img/20261104_134737.png)
+  logoUrl2x: 'assets/img/logo@2x.png',
 
   // BestClub 채널 (결제·리워드는 BestClub 기존 시스템에서 처리)
   bestclubUrl: 'https://bestclubvn.netlify.app/',

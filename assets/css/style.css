@@ -66,9 +66,9 @@ svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width:
 .header { position: sticky; top: 0; z-index: 40; background: rgba(255, 250, 243, .92); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
 .header__in { display: flex; align-items: center; gap: 16px; height: 68px; }
 .header__burger { display: none; }
-.logo { display: flex; align-items: center; height: 40px; flex-shrink: 0; }
-.logo img { max-height: 40px; width: auto; }
-.logo__text { display: inline-flex; align-items: center; gap: 8px; font-weight: 800; font-size: 19px; letter-spacing: .02em; }
+.logo { display: flex; align-items: center; gap: 8px; height: 40px; flex-shrink: 0; }
+.logo__mark { width: 40px; height: auto; }
+.logo__text { font-weight: 800; font-size: 19px; letter-spacing: .02em; white-space: nowrap; }
 .logo__sun { width: 22px; height: 22px; border-radius: 50%; background: radial-gradient(circle at 40% 40%, var(--sun-200), var(--sun-500)); }
 .nav { display: flex; gap: 4px; margin-left: 24px; }
 .nav a { padding: 8px 14px; border-radius: 999px; font-weight: 600; font-size: 15px; color: var(--ink-2); }
@@ -94,7 +94,8 @@ svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width:
   .header__burger { display: inline-flex; }
   .header__in { gap: 4px; height: 60px; }
   .header__user { display: none; }
-  .logo img { max-height: 32px; }
+  .logo__mark { width: 32px; }
+  .logo__text { font-size: 17px; }
 }
 
 /* ---------- hero ---------- */
