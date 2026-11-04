@@ -12,31 +12,147 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" rel="stylesheet">
+<link rel="preload" as="image" href="assets/img/hero/hero1.webp" media="(min-width: 761px)">
+<link rel="preload" as="image" href="assets/img/hero/hero1-m.webp" media="(max-width: 760px)">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 <div id="site-header"></div>
 <main id="main">
 
-<section class="hero">
-  <div class="wrap hero__in">
-    <div class="hero__copy">
-      <p class="eyebrow" data-i18n="hero.eyebrow"></p>
-      <h1 class="hero__title" data-i18n-html="hero.title"></h1>
-      <p class="hero__lead" data-i18n="hero.lead"></p>
-      <div class="hero__cta">
-        <a class="btn btn--primary btn--lg" href="shop.html"><span data-i18n="hero.cta"></span></a>
-        <button class="btn btn--ghost btn--lg" data-join><span data-i18n="hero.cta2"></span></button>
+<section class="hero" aria-roledescription="carousel" aria-label="SUN VIETNAM" data-hero>
+  <div class="hero__track">
+    <div class="slide slide--light is-on" data-slide="0" role="group" aria-roledescription="slide" aria-label="1 / 7">
+      <picture class="slide__bg">
+        <source media="(max-width: 760px)" srcset="assets/img/hero/hero1-m.webp">
+        <img src="assets/img/hero/hero1.webp" alt="" fetchpriority="high" width="1920" height="1072">
+      </picture>
+      <div class="wrap slide__in">
+        <div class="slide__copy">
+          <p class="eyebrow" data-i18n="hero.s1.e"></p>
+          <h1 class="hero__title" data-i18n-html="hero.s1.t"></h1>
+          <p class="hero__lead" data-i18n="hero.s1.d"></p>
+          <div class="hero__cta">
+            <a class="btn btn--primary btn--lg" href="shop.html"><span data-i18n="hero.cta"></span></a>
+            <a class="btn btn--ghost btn--lg" href="contact.html"><span data-i18n="hero.cta2"></span></a>
+          </div>
+        </div>
       </div>
-      <ul class="hero__badges">
-        <li data-i18n="hero.badge1"></li><li data-i18n="hero.badge2"></li><li data-i18n="hero.badge3"></li>
-      </ul>
     </div>
-    <div class="hero__art" aria-hidden="true">
-      <div class="sun"></div>
-      <div class="ray ray--1"></div><div class="ray ray--2"></div><div class="ray ray--3"></div>
-      <div class="hill hill--1"></div><div class="hill hill--2"></div>
+    <div class="slide slide--dark" data-slide="1" role="group" aria-roledescription="slide" aria-label="2 / 7" aria-hidden="true">
+      <picture class="slide__bg">
+        <source media="(max-width: 760px)" srcset="assets/img/hero/hero2-m.webp">
+        <img src="assets/img/hero/hero2.webp" alt="" loading="lazy" width="1920" height="1072">
+      </picture>
+      <div class="wrap slide__in">
+        <div class="slide__copy">
+          <p class="eyebrow" data-i18n="hero.s2.e"></p>
+          <h2 class="hero__title" data-i18n-html="hero.s2.t"></h2>
+          <p class="hero__lead" data-i18n="hero.s2.d"></p>
+          <div class="hero__cta">
+            <a class="btn btn--primary btn--lg" href="shop.html"><span data-i18n="hero.cta"></span></a>
+            <a class="btn btn--ghost btn--lg" href="contact.html"><span data-i18n="hero.cta2"></span></a>
+          </div>
+        </div>
+      </div>
     </div>
+    <div class="slide slide--dark" data-slide="2" role="group" aria-roledescription="slide" aria-label="3 / 7" aria-hidden="true">
+      <picture class="slide__bg">
+        <source media="(max-width: 760px)" srcset="assets/img/hero/hero3-m.webp">
+        <img src="assets/img/hero/hero3.webp" alt="" loading="lazy" width="1920" height="1072">
+      </picture>
+      <div class="wrap slide__in">
+        <div class="slide__copy">
+          <p class="eyebrow" data-i18n="hero.s3.e"></p>
+          <h2 class="hero__title" data-i18n-html="hero.s3.t"></h2>
+          <p class="hero__lead" data-i18n="hero.s3.d"></p>
+          <div class="hero__cta">
+            <a class="btn btn--primary btn--lg" href="shop.html"><span data-i18n="hero.cta"></span></a>
+            <a class="btn btn--ghost btn--lg" href="contact.html"><span data-i18n="hero.cta2"></span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slide slide--dark" data-slide="3" role="group" aria-roledescription="slide" aria-label="4 / 7" aria-hidden="true">
+      <picture class="slide__bg">
+        <source media="(max-width: 760px)" srcset="assets/img/hero/hero4-m.webp">
+        <img src="assets/img/hero/hero4.webp" alt="" loading="lazy" width="1920" height="1072">
+      </picture>
+      <div class="wrap slide__in">
+        <div class="slide__copy">
+          <p class="eyebrow" data-i18n="hero.s4.e"></p>
+          <h2 class="hero__title" data-i18n-html="hero.s4.t"></h2>
+          <p class="hero__lead" data-i18n="hero.s4.d"></p>
+          <div class="hero__cta">
+            <a class="btn btn--primary btn--lg" href="shop.html"><span data-i18n="hero.cta"></span></a>
+            <a class="btn btn--ghost btn--lg" href="contact.html"><span data-i18n="hero.cta2"></span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slide slide--dark" data-slide="4" role="group" aria-roledescription="slide" aria-label="5 / 7" aria-hidden="true">
+      <picture class="slide__bg">
+        <source media="(max-width: 760px)" srcset="assets/img/hero/hero5-m.webp">
+        <img src="assets/img/hero/hero5.webp" alt="" loading="lazy" width="1920" height="1072">
+      </picture>
+      <div class="wrap slide__in">
+        <div class="slide__copy">
+          <p class="eyebrow" data-i18n="hero.s5.e"></p>
+          <h2 class="hero__title" data-i18n-html="hero.s5.t"></h2>
+          <p class="hero__lead" data-i18n="hero.s5.d"></p>
+          <div class="hero__cta">
+            <a class="btn btn--primary btn--lg" href="shop.html"><span data-i18n="hero.cta"></span></a>
+            <a class="btn btn--ghost btn--lg" href="contact.html"><span data-i18n="hero.cta2"></span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slide slide--dark" data-slide="5" role="group" aria-roledescription="slide" aria-label="6 / 7" aria-hidden="true">
+      <picture class="slide__bg">
+        <source media="(max-width: 760px)" srcset="assets/img/hero/hero6-m.webp">
+        <img src="assets/img/hero/hero6.webp" alt="" loading="lazy" width="1920" height="1072">
+      </picture>
+      <div class="wrap slide__in">
+        <div class="slide__copy">
+          <p class="eyebrow" data-i18n="hero.s6.e"></p>
+          <h2 class="hero__title" data-i18n-html="hero.s6.t"></h2>
+          <p class="hero__lead" data-i18n="hero.s6.d"></p>
+          <div class="hero__cta">
+            <a class="btn btn--primary btn--lg" href="shop.html"><span data-i18n="hero.cta"></span></a>
+            <a class="btn btn--ghost btn--lg" href="contact.html"><span data-i18n="hero.cta2"></span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slide slide--dark" data-slide="6" role="group" aria-roledescription="slide" aria-label="7 / 7" aria-hidden="true">
+      <picture class="slide__bg">
+        <source media="(max-width: 760px)" srcset="assets/img/hero/hero7-m.webp">
+        <img src="assets/img/hero/hero7.webp" alt="" loading="lazy" width="1920" height="1072">
+      </picture>
+      <div class="wrap slide__in">
+        <div class="slide__copy">
+          <p class="eyebrow" data-i18n="hero.s7.e"></p>
+          <h2 class="hero__title" data-i18n-html="hero.s7.t"></h2>
+          <p class="hero__lead" data-i18n="hero.s7.d"></p>
+          <div class="hero__cta">
+            <a class="btn btn--primary btn--lg" href="shop.html"><span data-i18n="hero.cta"></span></a>
+            <a class="btn btn--ghost btn--lg" href="contact.html"><span data-i18n="hero.cta2"></span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero__nav wrap">
+    <button class="hero__arrow" data-hero-prev aria-label="previous">‹</button>
+    <div class="hero__dots" role="tablist"><button class="hero__dot is-on" data-dot="0" aria-label="1"></button><button class="hero__dot" data-dot="1" aria-label="2"></button><button class="hero__dot" data-dot="2" aria-label="3"></button><button class="hero__dot" data-dot="3" aria-label="4"></button><button class="hero__dot" data-dot="4" aria-label="5"></button><button class="hero__dot" data-dot="5" aria-label="6"></button><button class="hero__dot" data-dot="6" aria-label="7"></button></div>
+    <button class="hero__arrow" data-hero-next aria-label="next">›</button>
+  </div>
+</section>
+<section class="badges">
+  <div class="wrap">
+    <ul class="hero__badges">
+      <li data-i18n="hero.badge1"></li><li data-i18n="hero.badge2"></li><li data-i18n="hero.badge3"></li>
+    </ul>
   </div>
 </section>
 
