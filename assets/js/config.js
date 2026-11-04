@@ -23,13 +23,13 @@ export const MERCHANT = {
     email: '',
     zalo: '',        // 예: '0901234567'  → https://zalo.me/0901234567
     kakao: '',       // 카카오톡 오픈채팅 URL
-    address: { ko: '', vi: '' },
+    address: { ko: '베트남 하노이시 하동군', vi: 'Quận Hà Đông, Thành phố Hà Nội, Việt Nam' },
     hours: { ko: '평일 09:00 – 18:00', vi: 'Thứ 2 – Thứ 6, 09:00 – 18:00' },
   },
 
   // 사업자 정보 (푸터)
   business: {
-    companyName: '',
+    companyName: 'SUN VIETNAM (베트남 법인)',
     taxCode: '',      // 베트남 MST
     representative: '',
   },

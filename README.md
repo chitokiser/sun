@@ -1,5 +1,7 @@
 # SUN VIETNAM (썬베트남) — BestClub 가맹점 홈페이지
 
+베트남 법인 · 하노이 하동(Quận Hà Đông, Hà Nội) 소재.
+
 빌드 없는 정적 사이트(HTML · CSS · ES 모듈)입니다. 폴더를 그대로 Netlify 에 올리면 동작합니다.
 
 ## 로컬 실행
