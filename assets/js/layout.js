@@ -72,10 +72,11 @@ function headerHtml(active) {
 function footerHtml() {
   const c = MERCHANT.contact, b = MERCHANT.business;
   const rows = [
-    b.companyName && [t('footer.company'), b.companyName],
-    b.representative && [t('footer.rep'), b.representative],
+    tx(b.representative) && [t('footer.rep'), tx(b.representative)],
     b.taxCode && [t('footer.tax'), b.taxCode],
-    tx(c.address) && [t('contact.addrL'), tx(c.address)],
+    b.capital && [t('footer.capital'), b.capital],
+    tx(b.established) && [t('footer.est'), tx(b.established)],
+    tx(c.address) && [t('footer.hq'), tx(c.address)],
     c.phone && [t('contact.phoneL'), c.phone],
     c.email && [t('contact.emailL'), c.email],
   ].filter(Boolean);
@@ -84,9 +85,13 @@ function footerHtml() {
       <p class="footer__name">${esc(brandName())}</p>
       <p class="footer__partner"><span class="dot"></span>${t('footer.partner')}</p>
     </div>
-    <dl class="footer__info">${rows.map(([k, v]) => `<div><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`).join('')}</dl>
+    <div class="footer__corp">
+      <p class="footer__label">${t('footer.corp')}</p>
+      <p class="footer__company">${esc(b.companyNameEn || tx(b.companyName))}${tx(b.companyName) && b.companyNameEn ? ` <span>(${esc(tx(b.companyName))})</span>` : ''}</p>
+      <dl class="footer__info">${rows.map(([k, v]) => `<div><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`).join('')}</dl>
+    </div>
     <nav class="footer__nav">${NAV.map(([, href, key]) => `<a href="${href}">${t(key)}</a>`).join('')}<a href="${esc(MERCHANT.bestclubUrl)}" target="_blank" rel="noopener">BestClub ↗</a></nav>
-    <p class="footer__copy">© ${new Date().getFullYear()} ${esc(MERCHANT.brand.vi)}. ${t('footer.rights')}</p>
+    <p class="footer__copy">© ${new Date().getFullYear()} ${esc(b.companyNameEn || MERCHANT.brand.vi)}. ${t('footer.rights')}${b.taxCode ? ` · Tax Code: ${esc(b.taxCode)}` : ''}</p>
   </div></footer>`;
 }
 

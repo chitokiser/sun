@@ -19,19 +19,25 @@ export const MERCHANT = {
 
   // 연락처 — 비어 있는 항목은 화면에 표시되지 않습니다.
   contact: {
-    phone: '',
-    email: '',
+    phone: '0988-123-456',
+    email: 'contact@bestwinnervn.com',
     zalo: '',        // 예: '0901234567'  → https://zalo.me/0901234567
     kakao: '',       // 카카오톡 오픈채팅 URL
-    address: { ko: '베트남 하노이시 하동군', vi: 'Quận Hà Đông, Thành phố Hà Nội, Việt Nam' },
+    address: {
+      ko: '하노이시 하동구 완푹 서비스 토지 구역 NO 6B-LK46B',
+      vi: 'NO 6B-LK46B service land area, Vạn Phúc, Q. Hà Đông, Hà Nội',
+    },
     hours: { ko: '평일 09:00 – 18:00', vi: 'Thứ 2 – Thứ 6, 09:00 – 18:00' },
   },
 
-  // 사업자 정보 (푸터)
+  // 법인 정보 (푸터) — bestwinnervn.com 푸터와 동일
   business: {
-    companyName: 'SUN VIETNAM (베트남 법인)',
-    taxCode: '',      // 베트남 MST
-    representative: '',
+    companyName: { ko: '베스트위너 VN 유한회사', vi: 'CÔNG TY TNHH BEST WINNER VN' },
+    companyNameEn: 'BEST WINNER VN LIMITED COMPANY',
+    taxCode: '0110245813',          // MST · 사업자 등록번호
+    representative: { ko: '김성원 (Kim Sung Won)', vi: 'Kim Sung Won' },
+    capital: '1,270,000,000 VND',
+    established: { ko: '2023년 2월 9일', vi: '09/02/2023' },
   },
 };
 
