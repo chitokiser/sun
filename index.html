@@ -186,6 +186,14 @@
   </div>
 </section>
 
+<!-- BESTCLUB HUB (플랫폼 바로가기 · 공지 · 리워드 · 이벤트 — bestclubvn 공용 위젯) -->
+<section class="section section--tint" id="bestclub">
+  <div class="wrap">
+    <h2 class="h2" data-i18n="hub.title"></h2>
+    <div id="bestclubHub" data-bestclub-hub data-merchant="1793776651" data-theme="#DD2326" data-mode="light" data-lang="vi"></div>
+  </div>
+</section>
+
 <section class="join">
   <div class="wrap join__in">
     <div>
@@ -198,5 +206,15 @@
 </main>
 <div id="site-footer"></div>
 <script type="module" src="assets/js/pages/home.js"></script>
+<script>
+  // BestClub 허브 위젯: 사이트 언어(sunvn_lang)와 연동
+  (function () {
+    var hub = document.getElementById('bestclubHub');
+    function cur() { var l = null; try { l = localStorage.getItem('sunvn_lang'); } catch (e) {} return l || ((navigator.language || '').toLowerCase().indexOf('ko') === 0 ? 'ko' : 'vi'); }
+    if (hub) hub.dataset.lang = cur();
+    document.addEventListener('langchange', function () { if (window.BestClubHub) window.BestClubHub.setLang(cur()); });
+  })();
+</script>
+<script src="https://bestclubvn.netlify.app/assets/js/merchant-hub-widget.js" async></script>
 </body>
 </html>
